@@ -16,14 +16,17 @@ Including another URLconf
 
 from django.contrib import admin
 from django.urls import path, include
-
+from post_django.yasg import urlpatterns as doc_urls
+from post.views import index
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/v1/', include('post.urls')),
-
+    # redirect to http://localhost:8000/swagger/
+    path('', index)
 
 ]
 
 
+urlpatterns += doc_urls
