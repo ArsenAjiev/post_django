@@ -13,9 +13,19 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
+from post_django.yasg import urlpatterns as doc_urls
+from post.views import index
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('api/v1/', include('post.urls')),
+    #  redirect to http://localhost:8000/swagger/
+    path('', index)
+
 ]
+
+urlpatterns += doc_urls
