@@ -32,11 +32,11 @@ Link [https://postdjangobackend.herokuapp.com/swagger/](https://postdjangobacken
 
 1. img_1
 
-   ![](../../Users/adjie/Desktop/home_page.jpg)
+   ![](./screenshot/home_page.jpg)
    
 2. img_2
 
-   ![](../../Users/adjie/Desktop/home_page_2.jpg)
+   ![](./screenshot/home_page_2.jpg)
 
 screenshot django REST framework on heroku
 ====
@@ -45,8 +45,8 @@ Link [https://postdjangobackend.herokuapp.com/api/v1/post/](https://postdjangoba
 
 1. drf_1
 
-   ![](../../Users/adjie/Desktop/DRF_1.jpg)
+   ![](./screenshot/DRF_1.jpg)
    
 2. drf_2
 
-   ![](../../Users/adjie/Desktop/DRF_2.jpg)
+   ![](./screenshot/DRF_2.jpg)
